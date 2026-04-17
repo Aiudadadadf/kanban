@@ -1,0 +1,23 @@
+{
+	"name": "@kanban/desktop",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Kanban desktop app — Electron shell for the Kanban runtime",
+	"type": "module",
+	"scripts": {
+		"clean": "shx rm -rf dist out",
+		"typecheck": "tsc -p tsconfig.json --noEmit",
+		"test": "vitest run --passWithNoTests",
+		"test:watch": "vitest"
+	},
+	"devDependencies": {
+		"@electron/notarize": "^3.0.0",
+		"@electron/rebuild": "^3.7.1",
+		"@types/node": "^22.10.5",
+		"electron": "^33.4.0",
+		"electron-builder": "^25.1.8",
+		"shx": "^0.4.0",
+		"typescript": "^5.9.3",
+		"vitest": "^4.1.0"
+	}
+}
